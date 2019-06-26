@@ -43,7 +43,7 @@ typings/
 .npm
 
 # Optional eslint cache
-.eslintcache
+.eslintcaches
 
 # Optional REPL history
 .node_repl_history
@@ -61,5 +61,5 @@ typings/
 .next
 
 # Exclude any PSD/AI source
-#*.psd
-#*.ai
+*.psd
+*.ai
