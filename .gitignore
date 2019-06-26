@@ -61,4 +61,5 @@ typings/
 .next
 
 # photoshop files
-.psd
+psds
+*.psd
