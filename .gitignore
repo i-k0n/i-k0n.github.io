@@ -60,6 +60,6 @@ typings/
 # next.js build output
 .next
 
-# photoshop files
-psds
-*.psd
+# Exclude any PSD/AI source
+#*.psd
+#*.ai
