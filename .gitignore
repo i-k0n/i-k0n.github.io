@@ -60,6 +60,10 @@ typings/
 # next.js build output
 .next
 
-# Exclude any PSD/AI source
+### Adobe ###
+# Adobe Source Files
 *.psd
 *.ai
+*.indd
+*.prproj
+*.aep
