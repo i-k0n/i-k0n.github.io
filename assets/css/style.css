@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+
+}
+
+body {
+    overflow-y: auto;
+    overflow-y: overlay;
+}
+
+.wrapper {
+
+}
+
+.navigation {
+
+}
+
+.nav {
+    justify-content: flex-end;
+    padding-right: 5vw;
+}
+
+.about {
+}
+
+.about-container {
+    width: 100%;
+    min-height: 400px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 50px;
+}
+
+.profile-image {
+    width: 100%;
+    padding-top: 100%;
+    height: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    /* margin: 50px; */
+    background: url(../images/profile.svg) no-repeat #fff;
+}
+
+.about {
+    padding-left: 50px;
+    align-self: center;
+}
+
+.greeting {
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.card-container {
+    display: flex;
+    /* padding: 10px 50px; */
+}
+
+.card {
+    width: calc(50% - 10px);
+    margin: 15px;
+    border-radius: 0.4em;
+    border: 0;
+}
+
+.green-bg {
+    background-image: linear-gradient(#0d7e69, #04BF9D);
+}
+
+.orange-bg {
+    background-image: linear-gradient(#D97B73, #F2B279);
+}
+
+.blue-bg {
+    background-image: linear-gradient(#1B7EA6, #66C4D9);
+}
+
+.img-container {
+}
+
+.card-image {
+    width: 50vw;
+    float: left;
+}
+
+.card-image:hover {
+    /* top: 0vw; */
+}
+
+/* @media screen and (min-width: 980px) {
+    .card {
+        width: calc(33.3333% - 10px);
+    }
+} */
