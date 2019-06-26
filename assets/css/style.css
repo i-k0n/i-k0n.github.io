@@ -94,6 +94,21 @@ body {
     /* top: 0vw; */
 }
 
+a.portfolio-links {
+    position: relative;
+}
+
+a.portfolio-links img {
+    opacity: 1;
+}
+
+a.portfolio-links img:hover {
+    opacity: 0.85;
+}
+
+
+
+
 /* @media screen and (min-width: 980px) {
     .card {
         width: calc(33.3333% - 10px);
