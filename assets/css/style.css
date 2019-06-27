@@ -47,6 +47,7 @@ a.nav-link:hover {
     background-color: #eee;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
     padding: 50px;
 }
 
@@ -76,6 +77,10 @@ a.nav-link:hover {
 
 .clear-fix {
     clear: both;
+}
+
+a.work {
+    height: 20vh;
 }
 
 a.work h2 {
@@ -135,8 +140,40 @@ a.portfolio-links img:hover {
 
 
 
-/* @media screen and (min-width: 980px) {
-    .card {
-        width: calc(33.3333% - 10px);
+@media screen and (max-width: 800px) {
+
+    .about-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
-} */
+
+    .profile-image {
+        justify-self: center;
+        width: 70%;
+        padding-top: 70%;
+    }
+
+    .card-image {
+        width: 100vw;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    /* .about-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    } */
+
+    .profile-image {
+        justify-self: center;
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    /* .card-image {
+        width: 100vw;
+        float: left;
+    } */
+}
