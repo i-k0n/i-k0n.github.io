@@ -30,6 +30,10 @@ body {
     background-color: #eee;
 }
 
+.single .nav {
+    background-color: #fff;
+}
+
 a.nav-link {
     color: #999;
 }
@@ -139,6 +143,17 @@ a.portfolio-links img:hover {
 
 
 
+/*       SINGLE PAGES        */
+.project-title {
+    font-family: 'Playfair Display', serif;
+    padding-left: 4vw;
+}
+
+.project-short-info {
+    padding-left: 4vw;
+    color: #999;
+    font-size: 1.2em;
+}
 
 @media screen and (max-width: 800px) {
 
@@ -161,19 +176,9 @@ a.portfolio-links img:hover {
 
 @media screen and (max-width: 500px) {
 
-    /* .about-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    } */
-
     .profile-image {
         justify-self: center;
         width: 100%;
         padding-top: 100%;
     }
-
-    /* .card-image {
-        width: 100vw;
-        float: left;
-    } */
 }
