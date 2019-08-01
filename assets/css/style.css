@@ -16,8 +16,18 @@ body {
     overflow-y: overlay;
 }
 
-.wrapper {
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
+li {
+    display: inline;
+}
+
+.wrapper {
+    display: grid;
 }
 
 .navigation {
@@ -84,7 +94,7 @@ a.nav-link:hover {
 }
 
 a.work {
-    height: 20vh;
+    height: 14vh;
 }
 
 a.work h2 {
@@ -141,7 +151,26 @@ a.portfolio-links img:hover {
     opacity: 0.85;
 }
 
+.contact-container {
+    background-color: #333;
+    height: 20vmin;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.75rem;
+}
 
+.contact-container li {
+    padding: 0.4rem;
+}
+
+.contact-container a {
+    color: #04BF9D;
+}
+
+.contact-container a:hover {
+    color: #fff;
+}
 
 /*       SINGLE PAGES        */
 .single .wrapper {
