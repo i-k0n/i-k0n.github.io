@@ -146,10 +146,11 @@ a.portfolio-links img:hover {
 /*       SINGLE PAGES        */
 .single .wrapper {
     margin: 0 4vw;
+    color: #333;
 }
 
-.project-info-short {
-    /* padding-left: 4vw; */
+.project-info-head {
+    padding-left: 5vw;
 }
 
 .project-title {
@@ -158,28 +159,27 @@ a.portfolio-links img:hover {
 }
 
 .project-short-info {
-    color: #999;
     font-size: 1.2em;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 .single figure {
-    padding: 1vw 0;
+    padding: 1vw 5vw;
 }
 
 figure img {
-    max-width: 92vw;
+    max-width: 80vw;
 }
 
 .project-info-writeup {
     padding: 0 5vw;
-    color: #333;
 }
 
 .project-info-titles {
     font-size: 1.25rem;
     text-transform: uppercase;
-    font-family: 'Playfair Display';
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 }
 
 

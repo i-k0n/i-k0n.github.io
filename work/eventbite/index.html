@@ -39,7 +39,19 @@
         </figure>
         <section class="project-info-writeup">
             <h3 class="project-info-titles the-problem">The Problem</h3>
-            <p class="project-info-body the-problem-content">Sometimes friends want to meet up before (or after) an event to get some drinks, but it can be cumbersome to juggle multiple searches at once.</p>
+            <p class="project-info-body the-problem-content">Sometimes friends want to meet up before (or after) an event to get some foor or drinks. It can be cumbersome to juggle multiple searches across multiple apps at once.</p>
+        </section>
+        <section class="project-info-writeup">
+            <h3 class="project-info-titles the-problem">The Product</h3>
+            <p class="project-info-body the-problem-content">EventBite solves this problem by incorporating all the information you need in one place.</p>
+        </section>
+        <section class="project-info-writeup">
+            <h3 class="project-info-titles the-problem">The Process</h3>
+            <p class="project-info-body the-problem-content">A group of four of us looked at different events services currently available. There were several great event APIs out there, but through our research we found that SeatGeek's API fit our needs the best. GeoJS was used to grab the user's current location to populate the list of events. Once we had that in place, it was time to link events up with nearby restaurants. Our research turned up the Zomato restaurant API which ended up being very easy to work with. Zomato uses the event's location to search nearby restaurants, and lists them based on proximity. From there you are able to select a restaurant that works for your group, and click it to get directions.</p>
+        </section>
+        <section class="project-info-writeup">
+            <h3 class="project-info-titles the-problem">My Role</h3>
+            <p class="project-info-body the-problem-content">I worked mainly on the back-end on this project. I was responsible for getting the data from the SeatGeek API, formatting it, and sending it to the front-end team to display on the page. I also handled the geolocation aspects of the project. I initially began by using the built-in geolocation API in the browser which asks the user if the site can use their location. This became an issue since the API no longer returns the city or state of the user. To get that data, we would have to use yet another API which seemed redundant. I settled on the lightweight GeoJS API which gave us all the location data we needed based on the user's IP address. The only issue this posed was if the user was behind a VPN, but we solve that by giving the user the ability to search any city they would like.</p>
         </section>
     </div>
     
