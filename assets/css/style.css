@@ -48,6 +48,10 @@ a.nav-link {
     color: #999;
 }
 
+li.nav-item:last-child > a {
+    padding-right: 0;
+}
+
 a.nav-link:hover {
     color: #333;
 }
@@ -173,6 +177,10 @@ a.portfolio-links img:hover {
 }
 
 /*       SINGLE PAGES        */
+.single {
+    padding-bottom: 8vmax;
+}
+
 .single .wrapper {
     margin: 0 4vw;
     color: #333;
@@ -190,14 +198,43 @@ a.portfolio-links img:hover {
 .project-short-info {
     font-size: 1.2em;
     font-family: 'Source Sans Pro', sans-serif;
+    float: left;
+}
+
+.project-button-link {
+    float: right;
+    margin: 0 .5rem;
+}
+
+a.project-button-link:nth-child(3) {
+    margin-right: 5vw;
+}
+
+.project-button {
+    padding: 0.4rem 0.6rem;
+    border: 0px;
+    border-radius: .25rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: background-color 500ms;
+}
+
+.btn-img {
+    width: 1.1vmax;
+    margin: 0 0.15rem 0.2rem 0;
+}
+
+.project-button:hover {
+    background-color: #275c94;
 }
 
 .single figure {
-    padding: 1vw 5vw;
+    padding: 0vw 5vw 1vw;
 }
 
 figure img {
-    max-width: 80vw;
+    max-width: 82vw;
 }
 
 .project-info-writeup {
