@@ -221,7 +221,7 @@ a.project-button-link:nth-child(3) {
 }
 
 .btn-img {
-    width: 1.1vmax;
+    width: 1rem;
     margin: 0 0.15rem 0.2rem 0;
 }
 
@@ -246,6 +246,21 @@ figure img {
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+}
+
+/*      VIDEOS      */
+.damage-zones {
+    width: 20vw;
+    margin-right: 20px;
+}
+
+/* breaks above 1085 pixels*/
+
+.damage-animations {
+    width: calc(61.6vw - 20px);
+    height: 20vw;
+    object-fit: cover;
+    object-position: right;
 }
 
 
