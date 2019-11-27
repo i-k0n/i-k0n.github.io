@@ -117,13 +117,24 @@ a.nav-link:hover {
 }
 
 a.work {
-    height: 14vh;
+    height: 100px;
 }
 
 a.work h2 {
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-weight: 400;
-    padding: 25px 25px 10px;
+    padding: 50px 25px 10px;
+    text-transform: uppercase;
+}
+
+a.work h2:hover > span {
+    opacity: 1;
+}
+
+a.work > h2 > span {
+    opacity: 0;
+    color: dodgerblue;
+    font-weight: 500;
 }
 
 .card-container {
@@ -268,8 +279,10 @@ a.project-button-link:nth-child(3) {
     background-color: #275c94;
 }
 
-.single figure {
+.heroes-united-animation-examples {
     padding: 0vw 5vw 1vw;
+    display: flex;
+    flex-direction: row;
 }
 
 figure img {
