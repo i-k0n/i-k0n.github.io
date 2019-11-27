@@ -64,9 +64,28 @@ a.nav-link:hover {
     height: calc(100vh - 40px);
     background-color: #eee;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     padding: 50px;
+    position: relative;
+}
+
+.about-container::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: url(../images/angle-down.svg);
+    width: 42px;
+    height: 42px;
+    left: calc(50% - (35px/2));
+    bottom: 10px;
+    animation: 2s infinite arrow-bounce;
+}
+
+@keyframes arrow-bounce {
+    0% {transform: translateY(-10px);}
+    40% {transform: translateY(0)}
+    100% {transform: translateY(-10px);}
 }
 
 .profile-image {
