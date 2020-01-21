@@ -357,11 +357,6 @@ figure img {
         width: 70%;
         padding-top: 70%;
     }
-
-    .card-image {
-        width: 100vw;
-        float: left;
-    }
 }
 
 @media screen and (max-width: 500px) {
