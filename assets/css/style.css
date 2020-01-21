@@ -303,6 +303,11 @@ a.project-button-link:nth-child(2) {
     margin-top: -0.5rem;
 }
 
+.hero-image img {
+    /* some may not like how this looks */
+    border-top-right-radius: 0.25rem;
+}
+
 figure {
     margin: 0;
 }
@@ -365,5 +370,9 @@ figure img {
         justify-self: center;
         width: 100%;
         padding-top: 100%;
+    }
+
+    .work-container {
+        grid-template-columns: 1fr;
     }
 }
