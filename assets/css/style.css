@@ -31,7 +31,7 @@ li {
 }
 
 .navigation {
-    justify-self: end;
+    justify-self: center;
 }
 
 .nav {
@@ -54,9 +54,6 @@ li.nav-item:last-child > a {
 
 a.nav-link:hover {
     color: #333;
-}
-
-.about {
 }
 
 .about-container {
@@ -100,7 +97,7 @@ a.nav-link:hover {
 }
 
 .about {
-    padding-left: 50px;
+    padding-left: 0;
     align-self: center;
 }
 
@@ -163,7 +160,7 @@ a.work > h2 > span {
 
 .work-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: 1fr;
 }
 
 .project-item {
@@ -345,12 +342,7 @@ figure img {
 
 
 /*      MEDIA QUERIES       */
-@media screen and (max-width: 800px) {
-
-    .about-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
+@media screen and (min-width: 800px) {
 
     .profile-image {
         justify-self: center;
@@ -359,15 +351,17 @@ figure img {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) {
 
-    .profile-image {
-        justify-self: center;
-        width: 100%;
-        padding-top: 100%;
+    .navigation {
+        justify-self: end;
+    }
+
+    .about {
+        padding-left: 50px;
     }
 
     .work-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
 }
