@@ -114,13 +114,13 @@ a.nav-link:hover {
 }
 
 a.work {
-    height: 100px;
+    /* height: 100px; */
 }
 
 a.work h2 {
     font-size: 1.5em;
     font-weight: 400;
-    padding: 50px 25px 10px;
+    padding: 15px 25px 10px;
     text-transform: uppercase;
 }
 
