@@ -11,6 +11,8 @@ body {
     "Helvetica Neue", Arial, sans-serif;
   overflow-y: auto;
   overflow-y: overlay;
+  line-height: 1.5;
+  font-size: 1rem;
 }
 
 ul {
@@ -35,75 +37,8 @@ a {
 .navigation {
   justify-self: end;
   align-items: center;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
   display: flex;
   height: 40px;
-  right: -256px;
-  transition: 500ms;
-}
-
-.navigation.open {
-    right: 0px;
-}
-
-.hamburger-menu {
-  height: 40px;
-  width: 42px;
-  position: relative;
-  left: 0px;
-  background-color: #fff;
-  cursor: pointer;
-  display: flex;
-}
-
-.hamburger {
-  margin: 0 auto;
-  position: relative;
-  padding: 7px 5px 3px;
-}
-
-.hamburger span {
-  display: block;
-  width: 24px;
-  height: 3px;
-  background-color: #999;
-  margin: 0 auto;
-  position: relative;
-  border-radius: 3px;
-  transition: top 300ms 600ms, transform 150ms 300ms, opacity 150ms 300ms;
-}
-
-.hamburger span:nth-child(1) {
-  top: 5px;
-  transform: rotate(0);
-}
-
-.navigation.open .hamburger span:nth-child(1) {
-  transform: rotate(45deg);
-  top: 13px;
-  transition: top 150ms 300ms, transform 300ms 600ms;
-}
-
-.hamburger span:nth-child(2) {
-  top: 10px;
-}
-
-.navigation.open .hamburger span:nth-child(2) {
-  opacity: 0;
-  transition: opacity 150ms 300ms;
-}
-
-.hamburger span:nth-child(3) {
-  top: 15px;
-  transform: rotate(0);
-}
-
-.navigation.open .hamburger span:nth-child(3) {
-  transform: rotate(-45deg);
-  top: 7px;
-  transition: top 150ms 300ms, transform 300ms 600ms;
 }
 
 .nav {
@@ -119,6 +54,7 @@ a {
 a.nav-link {
   color: #999;
   padding: .5rem 1rem;
+  cursor: pointer;
 }
 
 li.nav-item:last-child > a {
@@ -269,34 +205,39 @@ a.work > h2 > span {
   color: #fff;
 }
 
+
+
 /*       SINGLE PAGES        */
 .single {
   padding-bottom: 8vmax;
 }
 
 .single .wrapper {
-  margin: 0 4vw;
+  margin: 0;
   color: #333;
   justify-items: center;
   grid-row-gap: 1rem;
+  width: 100%;
+  height: 100%;
 }
 
 .project-info-head {
-  padding: 0 5vw;
+  padding: 0 4vw;
   width: 100%;
 }
 
 .project-title {
   font-family: "Playfair Display", serif;
   margin-bottom: 0;
+  font-size: 2.5rem;
 }
 
 .project-info-meta-container {
-  display: grid;
-  grid-template-columns: 1fr 140px 115px;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0.5rem;
-  align-items: flex-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-column-gap: 0.5rem;
+    align-items: flex-start;
+    justify-items: flex-end;
 }
 
 .project-short-info {
@@ -304,13 +245,21 @@ a.work > h2 > span {
   font-family: "Source Sans Pro", sans-serif;
   padding-right: 75px;
   margin-bottom: 0.5rem;
+  justify-self: start;
 }
 
-a.project-button-link:nth-child(2) {
-  margin-right: 0;
+.project-buttons {
+    display: inline-flex;
+    justify-self: center;
+}
+
+.project-button-link:nth-child(1) {
+    margin-right: 0.5rem;
 }
 
 .project-button {
+    width: 175px;
+    height: 100%;
   padding: 0.4rem 0.6rem;
   border: 0px;
   border-radius: 0.25rem;
@@ -318,11 +267,15 @@ a.project-button-link:nth-child(2) {
   color: #fff;
   font-size: 0.9rem;
   transition: background-color 500ms;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-img {
   width: 1rem;
-  margin: 0 0.15rem 0.2rem 0;
+  margin: 0 0.35rem 0.2rem 0;
 }
 
 .heroesunited .project-button:hover {
@@ -334,9 +287,10 @@ a.project-button-link:nth-child(2) {
 }
 
 .heroes-united-animation-examples {
-  padding: 0vw 5vw 1vw;
+  padding: 0vw 4vw 1vw;
   display: flex;
   flex-direction: row;
+  justify-self: stretch;
 }
 
 .hero-image {
@@ -345,7 +299,7 @@ a.project-button-link:nth-child(2) {
 
 .hero-image img {
   /* some may not like how this looks */
-  border-top-right-radius: 0.25rem;
+  /* border-top-right-radius: 0.25rem; */
 }
 
 figure {
@@ -353,32 +307,39 @@ figure {
 }
 
 figure img {
-  width: 82vw;
+  width: 100%;
 }
 
 .project-info-writeup {
-  padding: 0 5vw;
+  padding: 0 4%;
   width: 100%;
 }
 
 .project-info-titles {
   font-size: 1.25rem;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", "Open Sans", sans-serif;
   font-weight: 700;
+  margin-bottom: 0.3rem;
+  line-height: 1.2;
+}
+
+.project-info-body {
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 /*      VIDEOS      */
 .damage-zones {
-  width: 20vw;
+  width: 24vw;
   margin-right: 20px;
 }
 
 /* breaks above 1085 pixels*/
 
 .damage-animations {
-  width: calc(61.6vw - 20px);
-  height: 20vw;
+  width: calc(67.6vw - 20px);
+  height: 24vw;
   object-fit: cover;
   object-position: right;
 }
@@ -397,17 +358,119 @@ figure img {
   
 } */
 
-@media screen and (min-width: 500px) {
+@-ms-viewport{
+    width: device-width;
+}
 
-    .navigation {
-        right: 0;
-    }
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
     
-    .hamburger-menu {
-      display: none;
-    }
 
     .work-container {
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+    
+    .project-buttons {
+        justify-self: end;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    
+
+    .work-container {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+    
+    .project-buttons {
+        justify-self: end;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    
+
+    .work-container {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+    
+    .project-buttons {
+        justify-self: end;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .work-container {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
       }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+
+    .navigation {
+        justify-self: center;
+    }
+
+    
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    .navigation {
+        justify-self: center;
+    }
+
+    .heroes-united-animation-examples {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .damage-animations {
+        width: 100%;
+        height: 100%;
+    }
+
+    .damage-zones {
+        width: 50%;
+        margin: 0 auto 4vw;
+    }
+    
   }

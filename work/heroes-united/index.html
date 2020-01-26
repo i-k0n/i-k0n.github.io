@@ -4,15 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mark Baker</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+    <title>Heroes United - Mark Baker</title>
+    <link rel="stylesheet" href="../../assets/css/reset.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
-
-    <!--  BOOTSTRAP  -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- FONTS -->
     <script src="https://kit.fontawesome.com/6f1fefd577.js"></script>
@@ -37,18 +31,20 @@
             <h1 class="project-title">Heroes United</h1>
             <div class="project-info-meta-container">
                 <p class="project-short-info">A fantasy RPG using JavaScript and MySQL</p>
-                <a class="project-button-link" href="https://github.com/i-k0n/heroes-united">
-                    <button class="project-button">
-                            <img class="btn-img" src="../../assets/images/github.svg" />
-                            View on Github
-                    </button>
-                </a>
-                <a class="project-button-link" href="https://heroesunited.herokuapp.com/">
-                    <button class="project-button">
-                            <img class="btn-img" src="../../assets/images/heroku.svg" />
-                            View Demo
-                    </button>
-                </a>
+                <div class="project-buttons">
+                    <a class="project-button-link" href="https://github.com/i-k0n/heroes-united">
+                        <button class="project-button">
+                                <img class="btn-img" src="../../assets/images/github.svg" />
+                                View on Github
+                        </button>
+                    </a>
+                    <a class="project-button-link" href="https://heroesunited.herokuapp.com/">
+                        <button class="project-button">
+                                <img class="btn-img" src="../../assets/images/heroku.svg" />
+                                View Demo
+                        </button>
+                    </a>
+                </div>
             </div>
         </section>
         <figure class="hero-image">
@@ -70,23 +66,24 @@
         <section class="project-info-writeup">
             <h3 class="project-info-titles the-problem">My Role</h3>
             <p class="project-info-body the-problem-content">I focused on the character encounters page, basically the actual battle for each chapter. I worked closely with my teammate that was doing the game logic, as her logic would be the bones that my assets were going to sit on top of. No one on the team was an artist, and we only had about nine days to complete the project, so we opted to use pre-made assets so we could focus on the mechanics of the game.</p>
-            <p class="project-info-body the-problem-content"></p>
+            <figure class="heroes-united-animation-examples">
+                <video class="damage-zones" autoplay muted loop>
+                    <source src="../../assets/videos/heroes-unitied-enemy-damage-zones.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="damage-animations" autoplay muted loop>
+                    <source src="../../assets/videos/attack-animations-full.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </figure>
         </section>
-        <figure class="heroes-united-animation-examples">
-            <video class="damage-zones" autoplay muted loop>
-                <source src="../../assets/videos/heroes-unitied-enemy-damage-zones.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <video class="damage-animations" autoplay muted loop>
-                <source src="../../assets/videos/attack-animations-full.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </figure>
+        
         <section class="project-info-writeup">
             <p class="project-info-body the-problem-content">One of the ideas we came up with to enhance the player experience by giving them some choice, was to allow players to choose a location on the enemy's body to attack. To achieve this, I created individual paths for each attackable body part in Adobe Illustrator, and exported them out as SVG so we could manipulate them on the page. For visual feedback, I colored each body part a transparent red when hovered over, and included a sliding pop-up to give details on how each body part differed from the others.</p>
             <p class="project-info-body the-problem-content">Animations were another area where we felt it was important to give players some feedback to further enhance their experience. I created a graphic for damage values to appear on screen after each character attacks, so you not only know how much damage you gave or received, but you also felt like your attack meant something. To add to that, I also shook or slid the characters depending on whether they took damage or missed an attack, as well as sliding them toward their opponent during the initial thrust. These additions gave the game a sense of life and energy, and I feel they really made it a more dynamic game as opposed to static experience.</p>
         </section>
     </div>
+    <script src="../../assets/javascript/script.js"></script>
 </body>
 </html>
 
