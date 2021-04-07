@@ -230,6 +230,7 @@ a.work > h2 > span {
   font-family: "Playfair Display", serif;
   margin-bottom: 0;
   font-size: 2.5rem;
+  line-height: 1.15;
 }
 
 .project-info-meta-container {
@@ -246,6 +247,8 @@ a.work > h2 > span {
   padding-right: 75px;
   margin-bottom: 0.5rem;
   justify-self: start;
+  color: #999;
+  letter-spacing: .2px;
 }
 
 .project-buttons {
@@ -313,6 +316,9 @@ figure img {
 .project-info-writeup {
   padding: 0 4%;
   width: 100%;
+  max-width: 100ch;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-info-titles {
@@ -320,13 +326,13 @@ figure img {
   text-transform: uppercase;
   font-family: "Work Sans", "Open Sans", sans-serif;
   font-weight: 700;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
   line-height: 1.2;
 }
 
 .project-info-body {
-    margin-top: 0;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem;
+    line-height: 1.5;
 }
 
 /*      VIDEOS      */
@@ -471,6 +477,10 @@ figure img {
     .damage-zones {
         width: 50%;
         margin: 0 auto 4vw;
+    }
+
+    .atlasquest .hero-image >img {
+      object-fit: fill;
     }
     
   }
