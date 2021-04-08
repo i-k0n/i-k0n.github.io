@@ -256,6 +256,8 @@ a.work > h2 > span {
     justify-self: center;
 }
 
+
+
 .project-button-link:nth-child(1) {
     margin-right: 0.5rem;
 }
@@ -263,17 +265,17 @@ a.work > h2 > span {
 .project-button {
     width: 175px;
     height: 100%;
-  padding: 0.4rem 0.6rem;
-  border: 0px;
-  border-radius: 0.25rem;
-  background-color: #333;
-  color: #fff;
-  font-size: 0.9rem;
-  transition: background-color 500ms;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    padding: 0.4rem 0.6rem;
+    border: 0px;
+    border-radius: 0.25rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: background-color 500ms;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-img {
@@ -287,6 +289,10 @@ a.work > h2 > span {
 
 .eventbite .project-button:hover {
   background-color: #fb5845;
+}
+
+.atlasquest .project-button:hover {
+  background-color: #386AFF;
 }
 
 .heroes-united-animation-examples {
@@ -305,12 +311,44 @@ a.work > h2 > span {
   /* border-top-right-radius: 0.25rem; */
 }
 
+.full-size-image-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: .75rem .75rem;
+  max-width: 100ch;
+  margin: 0 auto 1rem;
+}
+
+.full-size-image-links > button {
+  padding: .66rem 1.25rem
+}
+
+.full-size-image-links > button > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.atlasquest .img-before {
+  background-color: #262673;
+}
+
+.atlasquest .img-after {
+  background-color: #3D3D82;
+}
+
 figure {
   margin: 0;
 }
 
 figure img {
   width: 100%;
+}
+
+small {
+  font-style: italic;
+  color: #777;
+  margin-top: -.5rem;
+  margin-bottom: .5rem;
 }
 
 .project-info-writeup {
@@ -333,6 +371,39 @@ figure img {
 .project-info-body {
     margin: 0 0 1rem;
     line-height: 1.5;
+}
+
+.project-info-body > a {
+  color: #386AFF;
+  text-decoration: underline;
+}
+
+.content-divider {
+  margin: 0 auto 2.5rem;
+  font-size: 3rem;
+  color: #777;
+  letter-spacing: 1rem;
+}
+
+.f-r {
+  float: right;
+}
+
+.f-l {
+  float: left
+}
+
+.figure-small {
+  max-width: 200px;
+}
+
+.figure-center {
+  margin: 1rem auto 2rem;
+  padding: 0px 1rem;
+}
+
+.last-figure {
+  margin-top: 4rem;
 }
 
 /*      VIDEOS      */
@@ -449,7 +520,9 @@ figure img {
         justify-self: center;
     }
 
-    
+    .full-size-image-links {
+      grid-template-columns: repeat(2, 1fr);
+    }
     
   }
   
@@ -462,6 +535,10 @@ figure img {
 
     .navigation {
         justify-self: center;
+    }
+
+    .full-size-image-links {
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .heroes-united-animation-examples {
