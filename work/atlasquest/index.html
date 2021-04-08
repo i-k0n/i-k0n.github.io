@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AtlasQuest Reimagining - Mark Baker</title>
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <!-- FONTS -->
+    <script src="https://kit.fontawesome.com/6f1fefd577.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Playfair+Display:900&display=swap" rel="stylesheet">
+</head>
+<body class="single atlasquest">
+    <div class="wrapper">
+        <nav class="navigation">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html#work">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../mark-baker-resume.pdf">Resume</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="project-info-head">
+            <h1 class="project-title">AtlasQuest Reimagining</h1>
+            <div class="project-info-meta-container">
+                <p class="project-short-info">An unofficial redesign of the popular letterboxing hub</p>
+            </div>
+        </section>
+        <figure class="hero-image">
+            <img src="./assets/AtlasQuest-Hero.png" alt="Atlas Quest">
+        </figure>
+        <section class="full-size-image-links">
+          <button class="project-button img-before"><a href="./assets/AtlasQuest-HomePage-Before.png">Home Page &#40;Before&#41;</a></button>
+          <button class="project-button img-after"><a href="./assets/AtlasQuest-HomePage-After.png">Home Page &#40;After&#41;</a></button>
+          <button class="project-button img-before"><a href="./assets/AtlasQuest-MyPage-Before.png">My Page &#40;Before&#41;</a></button>
+          <button class="project-button img-after"><a href="./assets/AtlasQuest-MyPage-After.png">My Page &#40;After&#41;</a></button>
+        </section>
+        <section class="project-info-writeup">
+            <h3 class="project-info-titles the-problem">Preface</h3>
+            <p class="project-info-body the-problem-content">What is Letterboxing? Letterboxing is like a global scavenger hunt. Everyone has their own stamp and logbook, and there are boxes hidden all over with stamps inside. Websites like AtlasQuest provide a searchable database of box locations that one can use to find boxes nearby. Boxes are usually hidden outside, off the beaten path along trails; though some are hidden in urban area or even indoors. When you find a box, you stamp your stamp in the found logbook, and stamp the found stamp in your logbook. AtlasQuest offers the ability to keep track of all your found boxes, along with many other social features.</p>
+        </section>
+        <section class="project-info-writeup">
+            <h3 class="project-info-titles the-problem">The Problem</h3>
+            <p class="project-info-body the-problem-content">AtlasQuest is a fantastic tool for Letterboxers! It has forums, chatrooms, lists, sorting, filtering; more features than the average user probably uses. The problem comes with the layout. The site uses a widget-style layout on many pages which works for how the information is organized, but it looks very cluttered and ends up with every widget fighting for your attention.</p>
+        </section>
+        <section class="project-info-writeup">
+            <h3 class="project-info-titles the-problem">The Process</h3>
+            <p class="project-info-body the-problem-content">AtlasQuest has several themes to choose from, but I chose the default theme to guide my process. I started with the purple header color in the default theme, and built a color palette from there.</p>
+
+            <figure class="figure-small figure-center">
+              <img src="./assets/AtlasQuest-Colors.png" alt="Atlas Quest Color Palette" />
+            </figure>
+
+            <p class="project-info-body the-problem-content f-r">My goal was to make the information more digestible and less chaotic. The kitchen sink approach of having all options available at once is convenient if you know what you need and what you can ignore, but it can also be daunting to new users.</p>
+            
+        </section>
+        <section class="project-info-writeup">
+            <h3 class="project-info-titles the-problem">The Product</h3>
+            <small>Note: You can view full-size previews of the project above.</small>
+            <p class="project-info-body the-problem-content">For starters I moved the navigation up to be with the Register/Login section. There is a write-up explaining the default theme and it talks about the creator wanting to use a map in some way. Maps are awesome, but the selected one looks very busy. I chose a topographic design, lightened it, added a gradient for interest, and placed it behind the &#40;new&#41; logo. I also had the map fade out behind the content to draw your eye down and incorporate it into the rest of the design. The map also picks back up at the bottom where the footer begins.</p>
+
+            <figure class="figure-center">
+              <img src="./assets/AtlasQuest-Compare-LoginOut.png" alt="Atlas Quest Login and Logout Comparison" />
+            </figure>
+
+            <p class="project-info-body the-problem-content">Most users probably use the My Page section most frequently. I removed that section from the main nav and incorporated it into the User section next to the Logout button. Most websites that have user accounts have that accessible in the upper-right, so that's where I placed it here. Clicking your username will take you to the My Page page, and hovering over your username will give you the same dropdown as before. I also added a mail notification to alert you to any new messages you've received.</p>
+
+            <div class="content-divider">...</div>
+            
+            <p class="project-info-body the-problem-content">The rest of the content on the Home Page is made up of seven boxes, similar to widgets on other pages. There's a lot going on, and a lot of room for tidying up. The 3-column layout gives no clear indication of immediacy or importance to any of the boxes on the page, so I decided to go with a more common 2-column layout and choose a few elements to act like main content and use the others as sidebar content.</p>
+            
+            <figure class="figure-center">
+              <img src="./assets/AtlasQuest-Compare-Search.png" alt="Atlas Quest Search Comparison" />
+            </figure>
+
+            <p class="project-info-body the-problem-content">The Letterbox Search component is the next most-useful element on the page after the My Page link, so I chose it to be at the top. Some simple clean-up here: I placed the <strong>Get Current Location</strong> button and the <strong>Home Location</strong> button inside the search bar for convenience. I added filter checkboxes for the common filters used on many of the searches across the site.</p>
+
+            <figure class="figure-center">
+              <img src="./assets/AtlasQuest-Compare-Widget.png" alt="Atlas Quest Search Comparison" />
+            </figure>
+
+            <p class="project-info-body the-problem-content">A lot of the boxes were beginning to look samey and blend together, so I added a splash of color to the <strong>New To Letterboxing</strong> component to help it stand out to newcomers and add some flair to the design.</p>
+
+            <figure class="figure-center">
+              <img src="./assets/AtlasQuest-Custom-Icons.png" alt="Atlas Quest Custom Icons" />
+            </figure>
+
+            <p class="project-info-body the-problem-content">I used a combination of <a href="https://fontawesome.com/icons" target="_blank" title="Font Awesome">Font Awesome</a> icons and <a href="https://www.streamlineicons.com/" target="_blank" title="Streamline">Streamline</a> icons, sometimes modifying them to better fit my needs. AtlasQuest has a very quirky, "crafty" feel to it, especially with the icons it uses. If this were a full-blown project, I would create a custom icon set that tried to find a good balance between quirkiness and clean & simple design. For instance, I just used a default knife to indicate hand-carved stamps, where an icon for a Linoleum Cutter would be more applicable.</p>
+
+            <figure class="figure-center">
+              <img src="./assets/AtlasQuest-Footer.png" alt="Atlas Quest Footer" />
+            </figure>
+
+            <p class="project-info-body the-problem-content">The original footer contained a list of all the links in the nav bar at the top, along with some standard fare footer links. I like footers that aggregate a lot of links in one place like that; it feels like an index like you would find at the back of the book. Using the orange accent color on the column headers and placing everything in the footer on a muted purple background helps bring it together and makes it feel properly contained. Flat icons for the social links helps them to fade into the flow of information while still remaining visible.</p>
+
+            <figure class="figure-center">
+              <img src="./assets/AtlasQuest-Compare-Mailbox.png" alt="Atlas Quest Mailbox Comparison" />
+            </figure>
+
+            <p class="project-info-body the-problem-content"><strong>For the "My Page" page</strong> it made sense to keep the widget layout, as each widget component was a quick glance at a little bit of data that a user would be interested in seeing. The Mailbox component is a good example of the kitchen sink approach needing to be reigned in. Each message you receive is listed with four icons giving you options to view the sender's profile, message them, view their logbook, or add a note. I don't think those options get used all that often, and could be moved to the Mailbox page itself to clean up the UI a bit. The same goes for the plethora of links at the bottom. I kept the ones that seemed like they would be used most, and pushed the others to the Mailbox page itself.</p>
+
+            <p class="project-info-body the-problem-content">It should be noted that each widget component has an options menu at the top that will allow some customization or offer specific options to manage that component. The round green icon at the top of the original widget allows a user to click it and refresh the component to get updated data. Depending on the database used, this could listen for updates in the database and automatically refresh the component with new data.</p>
+
+            <p class="project-info-body the-problem-content">The rest of the components on the page follow a similar idea: show the most recent information, while giving the ability to click through to see more. My goal was to tidy up the information and display it in a way that would allow you to quickly scan and find what you need. Another great feature AtlasQuest offers is the ability to drag and drop widgets to reorganize the flow of the columns, so whatever you use the most can be moved up to the top.</p>
+
+            <h3 class="project-info-titles the-problem">The Wrap-up</h3>
+            <p class="project-info-body the-problem-content">I had a blast doing this project. I really like what I was able to achieve. AtlasQuest has great bones, but it has an older, early Web 2.0 look to it that is in need of an update. My reimagining takes into account contemporary design trends and updates the look and feel of the site without straying too far from what its users have become so familiar with.</p>
+
+            <figure class="figure-center last-figure">
+              <img src="./assets/AtlasQuest-Marjorie.png" alt="Marjorie the Chick" />
+            </figure>
+        </section>
+    </div>
+    <script src="../../assets/javascript/script.js"></script>
+</body>
+</html>
+
+
+
+
